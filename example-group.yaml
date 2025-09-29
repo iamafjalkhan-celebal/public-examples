@@ -1,0 +1,43 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: devops-dummy
+  description: DevOps Dummy Team
+  annotations:
+    # Link to the team's Slack channel for communication
+    backstage.io/slack-channel: '#devops-dummy'
+    # Link to the team's GitHub page for repositories and projects
+    github.com/team-slug: backstage/devops-dummy
+  tags:
+    - team
+spec:
+  type: team
+  profile:
+    displayName: DevOps Dummy
+    email: devops-dummy@example.com
+    picture: https://example.com/images/devops-dummy.png
+  members:
+    - user:guest
+    - user:devops-expert
+    - user:devops-junior
+  parent: example-org
+  children:
+    - devops-dummy-subgroup
+  owns:
+    - component:default/demo-catalog-component  
+    - system:default/dummy
+  domain: example-domain
+  roles:
+    - DevOps Engineers
+    - Site Reliability Engineers
+  responsibilities:
+    - Maintain CI/CD pipelines
+    - Monitor system health
+    - Ensure high availability  
+    - Automate infrastructure management
+  links:
+    - url: https://example.com/teams/devops-dummy
+      title: Team Page
+      icon: group
+      type: team-page
+  owner: example-org
