@@ -29,7 +29,7 @@ metadata:
         # Reference to the TechDocs documentation location
         backstage.io/techdocs-ref: dir:.
         # GitHub project slug for linking to the repository
-        github.com/project-slug: 
+        github.com/project-slug: backstage
     # Tags help categorize the component (e.g., by language)
     tags:
         - python
