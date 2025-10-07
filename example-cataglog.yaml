@@ -29,7 +29,7 @@ metadata:
         # Reference to the TechDocs documentation location
         backstage.io/techdocs-ref: dir:.
         # GitHub project slug for linking to the repository 
-        github.com/project-slug: backstage
+        github.com/project-slug: iamafjalkhan-celebal/web-app-with-azure
     # Tags help categorize the component (e.g., by language) e
     tags:
         - python
